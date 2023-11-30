@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import Image from 'next/image';
 
 const QRCodeGenerator = () => {
   const [qrCodeText, setQRCodeText] = useState('好きな言葉を入れてね');
