@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import Image from 'next/image';
+import Image from 'next/image'; // next/imageを追加
 
 const QRCodeGenerator = () => {
   const [qrCodeText, setQRCodeText] = useState('好きな言葉を入れてね');
@@ -31,7 +31,6 @@ const QRCodeGenerator = () => {
 
   return (
     <div>
-
       <h2>QRコードジェネレーターだお</h2>
       <div>
         <label htmlFor="qrCodeText">Enter text for QR code:</label>
@@ -49,7 +48,12 @@ const QRCodeGenerator = () => {
       {qrCodeImage && (
         <div>
           <h3>Generated QR Code:</h3>
-          <img src={qrCodeImage} alt="QR Code" />
+          <Image
+            src={qrCodeImage}
+            alt="QR Code"
+            width={200}
+            height={200}
+          />
         </div>
       )}
 
