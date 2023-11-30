@@ -1,5 +1,11 @@
-// my-nextjs-app/next.config.js
+// next.config.js
 module.exports = {
-    basePath: '', // デプロイ先のディレクトリ構造に合わせて変更
-    assetPrefix: '', // デプロイ先のディレクトリ構造に合わせて変更
-};
+    webpack: (config, { isServer }) => {
+      if (!isServer) {
+        config.resolve.fallback = { fs: false };
+      }
+  
+      return config;
+    },
+  };
+  
