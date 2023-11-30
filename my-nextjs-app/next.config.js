@@ -1,5 +1,5 @@
 module.exports = {
     basePath: '',
     assetPrefix: '',
-  };
+};
   
