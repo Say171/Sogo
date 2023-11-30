@@ -41,7 +41,7 @@ export default function App() {
       </div>
 
       <div>
-        <p>&ldquo;エモ&rdquo;の押し売り</p>
+        <p>&ldquo;エモ&rdquo;</p>
       </div>
 
       <div className="full-img">

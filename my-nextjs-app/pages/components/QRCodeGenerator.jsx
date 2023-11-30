@@ -31,7 +31,7 @@ const QRCodeGenerator = () => {
 
   return (
     <div>
-      <h2>QRコードジェネレーターだお</h2>
+      <h2>QRコードジェネレーター</h2>
       <div>
         <label htmlFor="qrCodeText">Enter text for QR code:</label>
         <input
