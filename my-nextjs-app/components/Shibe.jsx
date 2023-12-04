@@ -40,7 +40,7 @@ const Shibe = ({ count = 1, urls = true, httpsUrls = true, imageSize = '150px' }
           style={{ width: imageSize, height: 'auto' }}
         />
       ))}
-      <font size="1">サブリミナル柴イッヌ</font>
+      <p>サブリミナル柴イッヌ</p>
       {/* ライセンス表記 */}
       <p>
         ※This イッヌ is powered by the <a href="https://shibe.online/" target="_blank" rel="noopener noreferrer">shibe.online API</a>.
