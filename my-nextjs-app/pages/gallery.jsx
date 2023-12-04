@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './styles/img.css';
+import styles from '../styles/img.css';
 
 export default function App() {
   const images = [
@@ -36,7 +36,7 @@ export default function App() {
 
   return (
     <>
-      <div>
+      <div id="image-gallery-app">
         <h1>Image gallery</h1>
       </div>
 

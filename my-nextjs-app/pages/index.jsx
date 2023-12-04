@@ -2,12 +2,13 @@
 
 import React from 'react';
 import Link from 'next/link';
-import QRCodeGenerator from './components/QRCodeGenerator';
-import styles from './styles/style.css';
+import QRCodeGenerator from '../components/QRCodeGenerator';
+import Shibe from '../components/Shibe';
+import styles from '../styles/style.css';
 
 const HomePage = () => {
   return (
-    <div>
+    <div id = "home">
       {/* Header */}
       <header className={styles.header}>
         <h1>やぁ |ω・｀）ﾉ ﾔｧ</h1>
@@ -16,20 +17,24 @@ const HomePage = () => {
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/gallery">Gallery</Link></li>
-            <li><Link href="/about">About</Link></li>
           </ul>
         </nav>
       </header>
 
       {/* Main Section */}
-      <main>
+      <main className={styles.mainContainer}>
+        {/* Shibe */}
         <section>
+          <Shibe count={1} urls={true} httpsUrls={true} imageSize="500px" />
+        </section>
+        <section className={styles.mainSection}>
           <h2>歓迎するよ。</h2>
           <p>てすと てすと てすと てすと てすと てすと</p>
         </section>
-
-        {/* QR Code Generator */}
-        <QRCodeGenerator />
+        <section>
+          {/* QR Code Generator */}
+          <QRCodeGenerator />
+        </section>
       </main>
 
       {/* Footer */}
